@@ -25,6 +25,8 @@ jobs:
       - name: Pull repo
         uses: actions/checkout@v3
 
-      - name: Install GNU Guix
+      - name: Install Guix
         uses: PromyLOPh/guix-install-action@v1.3
-        run: guix build -f guix.scm
+
+      - name: Build site
+        run: guix environment -l guix.scm -- haunt build

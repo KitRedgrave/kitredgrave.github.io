@@ -1,1 +1,2 @@
-# kitredgrave.github.io
+# Hewwo
+It's me, Kit :3
