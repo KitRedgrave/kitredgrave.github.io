@@ -30,3 +30,8 @@ jobs:
 
       - name: Build site
         run: guix environment -l guix.scm -- haunt build
+
+      - name: Prep pages artifact
+        uses: actions/upload-pages-artifact@v1.0.7
+        with:
+          path: "site/"
